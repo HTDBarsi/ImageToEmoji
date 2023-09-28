@@ -40,4 +40,4 @@ class MyClient(discord.Client):
             return await message.add_reaction("😎")
 
 client = MyClient()
-client.run("NTUyMTg5NzcxMDExNTg4MDk2.GJAPk4.8EiHFLCo0EV06EygwWPpGykfxKNXr5RCZDfcsU")
+client.run("token here!")
