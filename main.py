@@ -39,5 +39,5 @@ class MyClient(discord.Client):
             await message.channel.send(returnmsg)
             return await message.add_reaction("😎")
 
-client = MyClient()
+client = MyClient(intents=discord.Intents.default())
 client.run("token here!")
