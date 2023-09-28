@@ -4,6 +4,7 @@ import os
 
 imgsize = 256
 
+os.mkdir("./out")
 class MyClient(discord.Client):
     async def on_ready(self):
         print('Logged in as '+self.user.name)
@@ -39,4 +40,4 @@ class MyClient(discord.Client):
             return await message.add_reaction("😎")
 
 client = MyClient()
-client.run("discord token here!")
+client.run("NTUyMTg5NzcxMDExNTg4MDk2.GJAPk4.8EiHFLCo0EV06EygwWPpGykfxKNXr5RCZDfcsU")
