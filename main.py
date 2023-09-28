@@ -4,7 +4,7 @@ import os
 
 imgsize = 256
 
-os.mkdir("./out")
+if not os.path.isdir("./out"): os.mkdir("./out")
 class MyClient(discord.Client):
     async def on_ready(self):
         print('Logged in as '+self.user.name)
